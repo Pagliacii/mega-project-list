@@ -4,4 +4,5 @@ This repository is the Rust implementations of [Martyr2's Mega Project List](htt
 
 ### Text
 
-1. **Reverse a String** - Enter a string and the program will reverse it and print it out.
+1. **Reverse a String** - Enter a string and the program will reverse it and print it out. [src](./reverse-a-string/src/lib.rs)
+
