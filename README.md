@@ -8,3 +8,5 @@ This repository is the Rust implementations of [Martyr2's Mega Project List](htt
 
 2. **Pig Latin** - Pig Latin is a game of alterations played on the English language game. To create the Pig Latin form of an English word the initial consonant sound is transposed to the end of the word and an ay is affixed (Ex.: "banana" would yield anana-bay). Read [Wikipedia](https://en.wikipedia.org/wiki/Pig_Latin) for more information on rules. [src](./pig_latin/src/lib.rs)
 
+3. **Count Vowels** - Enter a string and the program counts the number of vowels in the text. For added complexity have it report a sum of each vowel found. [src](./vowels_counter/src/lib.rs)
+
