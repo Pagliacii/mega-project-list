@@ -12,3 +12,4 @@ This repository is the Rust implementations of [Martyr2's Mega Project List](htt
 
 4. **Check if Palindrome** - Checks if the string entered by the user is a palindrome. That is that it reads the same forwards as backwards like "racecar". [src](./palindrome/src/lib.rs)
 
+5. **Count Words in a String** - Counts the number of individual words in a string. For added complexity read these strings in from a text file and generate a summary.

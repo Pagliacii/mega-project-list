@@ -1,0 +1,39 @@
+name: wccopy
+version: "1.0"
+author: Pagliacii <huangmianrui0310@outlook.com>
+about: |
+  Print newline, word, and byte counts for each FILE, and a total line if
+  more than one FILE is specified. A word is a non-zero-length sequence of
+  characters delimited by white space.
+
+  With no File, or when File is -, read standard input.
+
+args:
+  - bytes:
+      short: c
+      long: bytes
+      help: print the byte counts
+  - chars:
+      short: m
+      long: chars
+      help: print the character counts
+  - lines:
+      short: l
+      long: lines
+      help: print the newline counts
+  - file:
+      long: files0-from
+      takes_value: true
+      value_name: F
+      help: |
+        read input from the files specified by NUL-
+        terminated names in file F; If F is - then
+        read names from standard input
+  - max:
+      short: L
+      long: max-line-length
+      help: print the maximum display width
+  - words:
+      short: w
+      long: words
+      help: print the word counts
