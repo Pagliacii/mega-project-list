@@ -10,3 +10,5 @@ This repository is the Rust implementations of [Martyr2's Mega Project List](htt
 
 3. **Count Vowels** - Enter a string and the program counts the number of vowels in the text. For added complexity have it report a sum of each vowel found. [src](./vowels_counter/src/lib.rs)
 
+4. **Check if Palindrome** - Checks if the string entered by the user is a palindrome. That is that it reads the same forwards as backwards like "racecar". [src](./palindrome/src/lib.rs)
+
