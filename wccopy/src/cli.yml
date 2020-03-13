@@ -12,7 +12,7 @@ version: "0.1.0"
 author: Pagliacii <huangmianrui0310@outlook.com>
 help_message: display this help and exit
 version_message: output version information and exit
-about: |
+about: |-
   Print newline, word, and byte counts for each FILE, and a total line if
   more than one FILE is specified. A word is a non-zero-length sequence of
   characters delimited by white space.
@@ -21,10 +21,10 @@ about: |
 
   The options below may be used to select which counts are printed, always in
   the following order: newline, word, character, byte, maximum line length.
-usage: |
+usage: |-
   Usage: wc [OPTIONS]... [FILE]...
      or: wc [OPTIONS]... --files0-from=F
-after_help: |
+after_help: |-
   GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
   Full documentation <https://www.gnu.org/software/coreutils/wc>
   or available locally via: info '(coreutils) wc invocation'
