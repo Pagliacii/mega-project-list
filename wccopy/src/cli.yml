@@ -37,3 +37,9 @@ args:
       short: w
       long: words
       help: print the word counts
+  - FILE:
+      index: 1
+      long: files
+      multiple: true
+      conflicts_with:
+        - file
