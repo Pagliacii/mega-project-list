@@ -2,22 +2,22 @@
 
 This repository is the Rust implementations of [Martyr2's Mega Project List](https://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/).
 
-## :clipboard: TOC
+## Table of Contents
 
-+ [:1234: Numbers](#Numbers)
++ [Numbers](#Numbers)
   - Find PI to the Nth Digit
   - Fibonacci Sequence
   - Prime Factorization
   - Next Prime Number
   - Find Cost of Tile to Cover W x H Floor
-+ [:capital_abcd: Text](#Text)
++ [Text](#Text)
   - Reverse a String :ballot_box_with_check:
   - Pig Latin :ballot_box_with_check:
   - Count Vowels :ballot_box_with_check:
   - Check if Palindrome :ballot_box_with_check:
   - Count Words in a String :hourglass_flowing_sand:
 
-## :1234: Numbers
+## Numbers
 
 > This section copies from this project[:construction:](https://github.com/miguelgazela/Projects).
 
@@ -31,7 +31,7 @@ This repository is the Rust implementations of [Martyr2's Mega Project List](htt
 
 + **Find Cost of Tile to Cover W x H Floor** - Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user.
 
-## :capital_abcd: Text
+## Text
 
 + **Reverse a String** - Enter a string and the program will reverse it and print it out. [:page_facing_up:](./reverse-a-string/src/lib.rs)
 
@@ -43,7 +43,7 @@ This repository is the Rust implementations of [Martyr2's Mega Project List](htt
 
 + **Count Words in a String** - Counts the number of individual words in a string. For added complexity read these strings in from a text file and generate a summary.
 
-## :memo: License
+## License
 
-[MIT](./LICENSE)
+:memo:[MIT](./LICENSE)
 
