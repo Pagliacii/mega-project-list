@@ -19,7 +19,7 @@ This repository is the Rust implementations of [Martyr2's Mega Project List](htt
 
 ## Numbers
 
-> This section copies from this project[:construction:](https://github.com/miguelgazela/Projects).
+> This section copies from this [project](https://github.com/miguelgazela/Projects).
 
 + **Find PI to the Nth Digit** - Enter a number and have the program generate PI up to that many decimal places. Keep a limit to how far the program will go.
 
