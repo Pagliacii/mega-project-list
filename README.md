@@ -57,6 +57,13 @@ This repository is the Rust implementations of [Martyr2's Mega Project List](htt
   - Site Checker with Time Scheduling
   - Small Web Server
   - Web Bot
++ [Classes](#Classes)
+  - Product Inventory Project
+  - Movie Store
+  - Airline / Hotel Reservation System
+  - Student Grade Book Application
+  - Bank Account Manager
+  - Library Catalog
 
 ## Numbers
 
@@ -165,6 +172,20 @@ This repository is the Rust implementations of [Martyr2's Mega Project List](htt
 + **Small Web Server** - A simple web server that can serve HTML files that contain Javascript and other forms of non-code executing code. Added complexity would be to try and implement streaming video, create a server-side language, or serve up other stream types.
 
 + **Web Bot** - An automated program which carries out tasks on the web including checking websites, page scraping, and summarization of data or web posting.
+
+## Classes
+
++ **Product Inventory Project** - Create an application which manages an inventory of products. Create a product class which has a price, id, and quantity on hand. Then create an inventory class which keeps track of various products and can sum up the inventory value.
+
++ **Movie Store** - Manage video rentals and controls when videos are checked out, due to return, overdue fees and for added complexity create a summary of those accounts which are overdue for contact.
+
++ **Airline / Hotel Reservation System** - Create a reservation system which books airline seats or hotel rooms. It charges various rates for particular sections of the plane or hotel. Example, first class is going to cost more than coach. Hotel rooms have penthouse suites which cost more. Keep track of when rooms will be available and can be scheduled.
+
++ **Student Grade Book Application** - Keep track of students (with a student class that has their name, average, and scores) in a class and their grades. Assign their scores on tests and assignments to the students and figure out their average and grade for the class. For added complexity put the students on a bell curve.
+
++ **Bank Account Manager** - Create a class called "Account" which will be an abstract class for three other classes called "CheckingAccount", "SavingAccount" and "BusinessAccount". Manage credits and debits from these accounts through an ATM style program.
+
++ **Library Catalog** - Create a book class with a title, page count, ISBN and whether or not it is checked out or not. Manage a collection of various books and allow the user to check out books or return books. For added complexity generate a report of those books overdue and any fees. Also allow users to put books on reserve.
 
 ## License
 
