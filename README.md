@@ -43,22 +43,6 @@ This repository is the Rust implementations of [Martyr2's Mega Project List](htt
 
 ## Numbering Rules
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-14gg{background-color:#f5f5f5;border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-zw9b{background-color:#fff2cc;border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-xls1{font-weight:bold;background-color:#f5f5f5;border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-kfkg{background-color:#dae8fc;border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-wdkw{font-weight:bold;background-color:#fff2cc;border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-347s{font-weight:bold;background-color:#f8cecc;border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-jx94{font-weight:bold;background-color:#d5e8d4;border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-n533{font-weight:bold;background-color:#dae8fc;border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-zljd{background-color:#f8cecc;border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-gekp{background-color:#d5e8d4;border-color:inherit;text-align:center;vertical-align:top}
-</style>
 <table class="tg">
   <tr>
     <th class="tg-c3ow"><span style="font-weight:bold">Example</span></th>
