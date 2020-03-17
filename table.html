@@ -1,0 +1,200 @@
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-14gg{background-color:#f5f5f5;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-zw9b{background-color:#fff2cc;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-xls1{font-weight:bold;background-color:#f5f5f5;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-kfkg{background-color:#dae8fc;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-wdkw{font-weight:bold;background-color:#fff2cc;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-347s{font-weight:bold;background-color:#f8cecc;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-jx94{font-weight:bold;background-color:#d5e8d4;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-n533{font-weight:bold;background-color:#dae8fc;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-zljd{background-color:#f8cecc;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-gekp{background-color:#d5e8d4;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-num{font-weight:bold;background-color:#99ccee;border-color:inherit;text-align:center;vertical-align:top}
+.result-display{font-size:24px;display:flex;justify-content:center;align-items:center;flex-flow:column;}
+</style>
+<div class="result-display">
+  <table class="tg">
+    <tr>
+      <th class="tg-num">Number</th>
+      <th class="tg-xls1" colspan="4">Reserved</th>
+      <th class="tg-347s" colspan="2">Difficulty</th>
+      <th class="tg-wdkw">From</th>
+      <th class="tg-jx94" colspan="4">Section Number</th>
+      <th class="tg-n533" colspan="5">Number in Section</th>
+    </tr>
+    <tr>
+      <td class="tg-num" id="result">0x0000</td>
+      <td class="tg-14gg">
+        <select name="reserved3" id="0xf">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+      <td class="tg-14gg">
+        <select name="reserved2" id="0xe">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+      <td class="tg-14gg">
+        <select name="reserved1" id="0xd">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+      <td class="tg-14gg">
+        <select name="reserved0" id="0xc">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+      <td class="tg-zljd">
+          <select name="difficulty1" id="0xb">
+            <option value="0">0</option>
+            <option value="1">1</option>
+          </select>
+      </td>
+      <td class="tg-zljd">
+          <select name="difficulty0" id="0xa">
+            <option value="0">0</option>
+            <option value="1">1</option>
+          </select>
+      </td>
+      <td class="tg-zw9b">
+        <select name="from0" id="0x9">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+      <td class="tg-gekp">
+        <select name="section3" id="0x8">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+      <td class="tg-gekp">
+        <select name="section2" id="0x7">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+      <td class="tg-gekp">
+        <select name="section1" id="0x6">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+      <td class="tg-gekp">
+        <select name="section0" id="0x5">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+      <td class="tg-kfkg">
+        <select name="num4" id="0x4">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+      <td class="tg-kfkg">
+        <select name="num3" id="0x3">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+      <td class="tg-kfkg">
+        <select name="num2" id="0x2">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+      <td class="tg-kfkg">
+        <select name="num1" id="0x1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+      <td class="tg-kfkg">
+        <select name="num0" id="0x0">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <div class="buttons">
+    <button id="clear">Clear</button>
+  </div>
+</div>
+
+<script type="text/javascript">
+  class BitMap {
+    constructor(len=16) {
+      this.len = len;
+      this.data = new Array(this.len);
+      this.hexValue = "";
+      this.init();
+    }
+
+    init() {
+      for (let i = 0; i < this.len; i++) {
+        this.data[i] = 0;
+      }
+      this.hexValue = "0x0000";
+    }
+
+    reset() {
+      this.init();
+    }
+
+    getHexValue() {
+      return this.hexValue;
+    }
+
+    calculate() {
+      let binString = "";
+      for (let i = 0; i < this.data.length; i++) {
+        binString += this.data[i];
+      }
+
+      let hexString = parseInt(binString, 2).toString(16).toUpperCase();
+      let zeroNum = hexString.length > 4 ? 0 :Math.abs(hexString.length - 4);
+      this.hexValue = "0x" + "0".repeat(zeroNum) + hexString;
+    }
+
+    setBit(index, bit) {
+      if (isNaN(index) || index < 0 || index >= this.data.length) {
+        throw "Invalid index";
+      }
+      this.data[index] = parseInt(bit) == 0 ? 0 : 1;
+      this.calculate();
+    }
+  }
+
+  let bMap       = new BitMap(16);
+  let selectors  = document.querySelectorAll("select");
+  let resultElem = document.getElementById("result");
+  let clearBtn   = document.getElementById("clear");
+
+  selectors.forEach((item, key, parent) => {
+    item.onchange = (event) => {
+      let index = parseInt(event.target.id);
+      if (index > 15) {
+        return;
+      }
+      bMap.setBit(Math.abs(15 - index), parseInt(event.target.value));
+      resultElem.textContent = bMap.getHexValue();
+    };
+  });
+
+  clearBtn.onclick = (event) => {
+    selectors.forEach((item, key, parent) => {
+      item.value = "0";
+    });
+    bMap.reset();
+    resultElem.textContent = bMap.getHexValue();
+  }
+</script>
