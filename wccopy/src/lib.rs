@@ -1,8 +1,26 @@
 #[cfg(test)]
 mod tests {
+    use super::*;
+
     #[test]
     fn it_works() {
-        assert_eq!(2 + 2, 4);
+        let mut c = Config::default();
+        assert!(c.byte_counts);
+        assert!(c.line_counts);
+        assert!(c.word_counts);
+        assert!(!c.char_counts);
+        assert!(!c.max_width);
+        assert_eq!(1, c.files().len());
+        assert_eq!(String::from("-"), c.files()[0]);
+
+        c.byte_toggle(false);
+        assert!(!c.byte_counts);
+        c.char_toggle(true);
+        assert!(c.char_counts);
+        let expected = "test";
+        c.append_file(expected);
+        assert_eq!(2, c.files().len());
+        assert_eq!(String::from(expected), c.files()[1]);
     }
 }
 
@@ -82,8 +100,8 @@ impl Config {
     }
 
     /// Appends a file to be counted.
-    pub fn append_file(&mut self, filename: String) {
-        self.files.push(filename);
+    pub fn append_file(&mut self, filename: &str) {
+        self.files.push(String::from(filename));
     }
 
     /// Gets all files to be counted.
