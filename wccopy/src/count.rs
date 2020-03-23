@@ -1,3 +1,4 @@
+use std::cmp;
 use std::default::Default;
 use std::error::Error;
 use std::fs::File;
@@ -41,33 +42,26 @@ impl Counter {
     }
 
     pub fn count(&mut self) -> Result<(), Box<dyn Error>> {
-        let mut reader: BufReader<Box<dyn Read>>;
+        let reader: BufReader<Box<dyn Read>>;
         if "-" == self.from {
             // A. count by inputs from stdin
-            reader = BufReader::new(Box::new(io::stdin()))
+            reader = BufReader::new(Box::new(io::stdin()));
         } else {
             // B. count by file contents
             let f = File::open(&self.from)?;
-            reader = BufReader::new(Box::new(f))
+            reader = BufReader::new(Box::new(f));
         };
 
-        loop {
-            let mut input = String::new();
-            let bytes = reader.read_line(&mut input)?;
-            if 0 == bytes {
-                // EOF reached
-                return Ok(());
-            }
-
+        for line in reader.lines() {
+            let line = line?;
+            let bytes = line.len() + 1; // add 1 to include the newline character
             self.bytes += bytes;
-            self.chars += input.chars().count();
-            self.words += input.split_whitespace().count();
-            if (bytes - 1) > self.width {
-                // minus 1 to exclude the newline character
-                self.width = bytes - 1;
-            }
+            self.chars += bytes;
+            self.words += line.split_whitespace().count();
+            self.width = cmp::max(self.width, line.len());
             self.lines += 1;
         }
+        Ok(())
     }
 }
 
