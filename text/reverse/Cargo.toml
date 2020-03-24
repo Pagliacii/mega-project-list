@@ -1,5 +1,5 @@
 [package]
-name = "reverse-a-string"
+name = "reverse"
 version = "0.1.0"
 authors = ["Pagliacii <huangmianrui0310@outlook.com>"]
 edition = "2018"
