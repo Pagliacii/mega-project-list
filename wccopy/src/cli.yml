@@ -8,7 +8,7 @@ template: |
   {subcommands}
   {after-help}
 name: wccopy
-version: "0.1.0"
+version: "1.0.0"
 author: Pagliacii <huangmianrui0310@outlook.com>
 help_message: display this help and exit
 version_message: output version information and exit
