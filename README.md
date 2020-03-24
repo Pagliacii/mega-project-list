@@ -1,6 +1,6 @@
 # Martyr2's Mega Project List
 
-This repository is the Rust implementations of [Martyr2's Mega Project List](https://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/).
+This repository is the Rust implementation of [Martyr2's Mega Project List](https://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/).
 
 ## ToC
 
