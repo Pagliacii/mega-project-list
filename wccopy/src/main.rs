@@ -2,14 +2,14 @@
 extern crate clap;
 
 use std::default::Default;
-use std::error::Error;
 use std::fs::File;
 use std::io;
 use std::io::prelude::*;
-use std::process;
+use std::str;
 
 use clap::{App, ArgMatches};
 
+use wccopy::error::{WCError, WCErrorKind};
 use wccopy::{run, Config};
 
 fn main() {
@@ -17,18 +17,14 @@ fn main() {
     let matches = App::from_yaml(yaml).get_matches();
     let config: Config = match parse(&matches) {
         Ok(c) => c,
-        Err(e) => {
-            eprintln!("error: {:?}", e);
-            process::exit(1);
-        }
+        Err(e) => e.exit(),
     };
     if let Err(e) = run(&config) {
-        eprintln!("error: {:?}", e);
-        process::exit(1);
+        e.exit();
     }
 }
 
-fn parse(matches: &ArgMatches) -> Result<Config, Box<dyn Error>> {
+fn parse(matches: &ArgMatches) -> Result<Config, WCError> {
     let mut config: Config = Default::default();
 
     // parse flags
@@ -56,17 +52,45 @@ fn parse(matches: &ArgMatches) -> Result<Config, Box<dyn Error>> {
             Box::new(io::stdin())
         } else {
             // read file names from the file
-            Box::new(File::open(files_from)?)
+            match File::open(files_from) {
+                Ok(f) => Box::new(f),
+                Err(e) => {
+                    let mut message = format!("failed to open '{}'", files_from);
+                    if e.kind() == io::ErrorKind::NotFound {
+                        message = format!("'{}' : No such file or directory", files_from);
+                    }
+                    return Err(WCError::new(1, WCErrorKind::OpenFailed(e), &message));
+                }
+            }
         };
         let mut buffer = Vec::new();
-        reader.read_to_end(&mut buffer)?;
+        if let Err(e) = reader.read_to_end(&mut buffer) {
+            return Err(WCError::new(
+                1,
+                WCErrorKind::ReadFailed(e),
+                &format!("failed to read contents from '{}'", files_from),
+            ));
+        }
         for utf8_bytes in buffer.split(|&elem| elem == 0u8) {
-            let file = &String::from_utf8(utf8_bytes.to_vec())?;
+            let file = match str::from_utf8(utf8_bytes) {
+                Ok(f) => f,
+                Err(e) => {
+                    return Err(WCError::new(
+                        1,
+                        WCErrorKind::InvalidBytes(e),
+                        "invalid UTF-8 bytes",
+                    ))
+                }
+            };
             if "-" == file && "-" == files_from {
-                panic!("wc: when reading file names from stdin, no file name of '-' allowed");
+                return Err(WCError::new(
+                    1,
+                    WCErrorKind::NotAllowed,
+                    "when reading file names from stdin, no file name of '-' allowed",
+                ));
             }
             if !file.is_empty() {
-                config.append_file(file);
+                config.append_file(&file);
             }
         }
     } else if let Some(files) = matches.values_of("FILE") {

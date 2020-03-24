@@ -1,10 +1,10 @@
 use std::default::Default;
-use std::error::Error;
 
 use crate::config::Config;
 use crate::count::Counter;
+use crate::error::WCError;
 
-pub fn run(config: &Config) -> Result<(), Box<dyn Error>> {
+pub fn run(config: &Config) -> Result<(), WCError> {
     let mut total_bytes = 0;
     let mut total_chars = 0;
     let mut total_lines = 0;

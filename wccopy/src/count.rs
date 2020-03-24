@@ -1,10 +1,11 @@
 use std::cmp;
 use std::default::Default;
-use std::error::Error;
 use std::fs::File;
 use std::io;
 use std::io::prelude::*;
 use std::io::{BufReader, Read};
+
+use crate::error::{WCError, WCErrorKind};
 
 #[derive(Debug, Default)]
 pub struct Counter {
@@ -41,19 +42,37 @@ impl Counter {
         self.width
     }
 
-    pub fn count(&mut self) -> Result<(), Box<dyn Error>> {
+    pub fn count(&mut self) -> Result<(), WCError> {
         let reader: BufReader<Box<dyn Read>>;
         if "-" == self.from {
             // A. count by inputs from stdin
             reader = BufReader::new(Box::new(io::stdin()));
         } else {
             // B. count by file contents
-            let f = File::open(&self.from)?;
+            let f = match File::open(&self.from) {
+                Ok(f) => f,
+                Err(e) => {
+                    let mut message = format!("failed to open '{}'", self.from);
+                    if e.kind() == io::ErrorKind::NotFound {
+                        message = format!("'{}' : No such file or directory", self.from);
+                    }
+                    return Err(WCError::new(1, WCErrorKind::OpenFailed(e), &message));
+                }
+            };
             reader = BufReader::new(Box::new(f));
         };
 
         for line in reader.lines() {
-            let line = line?;
+            let line = match line {
+                Ok(l) => l,
+                Err(e) => {
+                    return Err(WCError::new(
+                        1,
+                        WCErrorKind::ReadFailed(e),
+                        "invalid UTF-8 bytes",
+                    ))
+                }
+            };
             let bytes = line.len() + 1; // add 1 to include the newline character
             self.bytes += bytes;
             self.chars += bytes;
