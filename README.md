@@ -86,156 +86,156 @@ This repository is the Rust implementations of [Martyr2's Mega Project List](htt
 
 ## Summary
 
-| Number | Title                                      | Section                | From       | Done                    | File                                              | Difficulty   |
-| :----: | :----                                      | :-----:                | :--:       | :--:                    | :--:                                              | :---------   |
-| 0x0000 | Find PI to the Nth Digit                   | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x0001 | Fibonacci Sequence                         | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x0002 | Prime Factorization                        | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x0003 | Next Prime Number                          | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x0004 | Find Cost of Tile to Cover W x H Floor     | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x0005 | Mortgage Calculator                        | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x0006 | Change Return Program                      | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x0007 | Binary to Decimal and Back Converter       | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x0008 | Calculator                                 | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x0009 | Unit Converter                             | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x000A | Alarm Clock                                | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x000B | Distance Between Two Cities                | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x000C | Credit Card Validator                      | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x000D | Tax Calculator                             | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x000E | Factorial Finder                           | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x000F | Complex Number Algebra                     | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x0010 | Happy Numbers                              | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x0011 | Number Names                               | :1234:                 | :bookmark: |                         |                                                   |              |
-| 0x0420 | Reverse a String                           | :capital_abcd:         | :bulb:     | :ballot_box_with_check: | [:page_facing_up:](./reverse-a-string/src/lib.rs) | :star:       |
-| 0x0421 | Pig Latin                                  | :capital_abcd:         | :bulb:     | :ballot_box_with_check: | [:page_facing_up:](./pig_latin/src/lib.rs)        | :star:       |
-| 0x0422 | Count Vowels                               | :capital_abcd:         | :bulb:     | :ballot_box_with_check: | [:page_facing_up:](./vowels_counter/src/lib.rs)   | :star:       |
-| 0x0423 | Check if Palindrome                        | :capital_abcd:         | :bulb:     | :ballot_box_with_check: | [:page_facing_up:](./palindrome/src/lib.rs)       | :star:       |
-| 0x0824 | Count Words in a String                    | :capital_abcd:         | :bulb:     | :ballot_box_with_check: | [:book:](./wccopy/README.md)                      | :star::star: |
-| 0x0025 | Text Editor                                | :capital_abcd:         | :bulb:     |                         |                                                   |              |
-| 0x0026 | RSS Feed Creator                           | :capital_abcd:         | :bulb:     |                         |                                                   |              |
-| 0x0027 | Post it Notes Program                      | :capital_abcd:         | :bulb:     |                         |                                                   |              |
-| 0x0028 | Quote Tracker                              | :capital_abcd:         | :bulb:     |                         |                                                   |              |
-| 0x0029 | Guestbook / Journal                        | :capital_abcd:         | :bulb:     |                         |                                                   |              |
-| 0x002A | News Ticker and Game Scores                | :capital_abcd:         | :bulb:     |                         |                                                   |              |
-| 0x002B | Fortune Teller                             | :capital_abcd:         | :bulb:     |                         |                                                   |              |
-| 0x002C | Vigenere / Vernam / Ceasar Ciphers         | :capital_abcd:         | :bulb:     |                         |                                                   |              |
-| 0x002D | Random Gift Suggestions                    | :capital_abcd:         | :bulb:     |                         |                                                   |              |
-| 0x002E | Text to HTML Generator                     | :capital_abcd:         | :bulb:     |                         |                                                   |              |
-| 0x002F | CD Key Generator                           | :capital_abcd:         | :bulb:     |                         |                                                   |              |
-| 0x0030 | Regex Query Tool                           | :capital_abcd:         | :bulb:     |                         |                                                   |              |
-| 0x0231 | Forty Days of Dating Scraper               | :capital_abcd:         | :bookmark: |                         |                                                   |              |
-| 0x0040 | FTP Program                                | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x0041 | Get Atomic Time from Internet Clock        | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x0042 | Chat Application                           | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x0043 | Fetch Current Weather                      | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x0044 | P2P File Sharing App                       | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x0045 | Port Scanner                               | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x0046 | Mail Checker                               | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x0047 | Packet Sniffer                             | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x0048 | Country from IP Lookup                     | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x0049 | Whois Search Tool                          | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x004A | Zip / Postal Code Lookup                   | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x004B | Remote Login                               | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x004C | Site Checker with Time Scheduling          | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x004D | Small Web Server                           | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x004E | Web Bot                                    | :globe_with_meridians: | :bulb:     |                         |                                                   |              |
-| 0x0060 | Product Inventory Project                  | :package:              | :bulb:     |                         |                                                   |              |
-| 0x0061 | Movie Store                                | :package:              | :bulb:     |                         |                                                   |              |
-| 0x0062 | Airline / Hotel Reservation System         | :package:              | :bulb:     |                         |                                                   |              |
-| 0x0063 | Student Grade Book Application             | :package:              | :bulb:     |                         |                                                   |              |
-| 0x0064 | Bank Account Manager                       | :package:              | :bulb:     |                         |                                                   |              |
-| 0x0065 | Library Catalog                            | :package:              | :bulb:     |                         |                                                   |              |
-| 0x0266 | Patient / Doctor Scheduler                 | :package:              | :bookmark: |                         |                                                   |              |
-| 0x0267 | Recipe Creator and Manager                 | :package:              | :bookmark: |                         |                                                   |              |
-| 0x0268 | Image Gallery                              | :package:              | :bookmark: |                         |                                                   |              |
-| 0x0269 | Class to Handle Large Numbers              | :package:              | :bookmark: |                         |                                                   |              |
-| 0x026A | Chart Making Class / API                   | :package:              | :bookmark: |                         |                                                   |              |
-| 0x026B | Shape Area and Perimeter Classes           | :package:              | :bookmark: |                         |                                                   |              |
-| 0x026C | Matrix Class                               | :package:              | :bookmark: |                         |                                                   |              |
-| 0x026D | Flower Shop Ordering To Go                 | :package:              | :bookmark: |                         |                                                   |              |
-| 0x026E | Vending Machine                            | :package:              | :bookmark: |                         |                                                   |              |
-| 0x026F | Josephus Problem                           | :package:              | :bookmark: |                         |                                                   |              |
-| 0x0270 | Family Tree Creator                        | :package:              | :bookmark: |                         |                                                   |              |
-| 0x0080 | Create A Progress Bar for Downloads        | :bar_chart:            | :bulb:     |                         |                                                   |              |
-| 0x0081 | Download Manager                           | :bar_chart:            | :bulb:     |                         |                                                   |              |
-| 0x0082 | Chat Application                           | :bar_chart:            | :bulb:     |                         |                                                   |              |
-| 0x0083 | Bulk Thumbnail Creator                     | :bar_chart:            | :bulb:     |                         |                                                   |              |
-| 0x00A0 | WYSIWG Editor                              | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00A1 | Web Browser with Tabs                      | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00A2 | Page Scraper                               | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00A3 | File Downloader                            | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00A4 | Telnet Application                         | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00A5 | Online White Board                         | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00A6 | Bandwidth Monitor                          | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00A7 | Bookmark Collector and Sorter              | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00A8 | Password Safe                              | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00A9 | Media Player Widget for iGoogle            | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00AA | Text Based Game Like Utopia                | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00AB | Scheduled Auto Login and Action            | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00AC | E-Card Generator                           | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00AD | Content Management System                  | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00AE | Template Maker                             | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00AF | CAPTCHA Maker                              | :surfer:               | :bulb:     |                         |                                                   |              |
-| 0x00C0 | Quiz Maker                                 | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00C1 | Quick Launcher                             | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00C2 | File Explorer                              | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00C3 | Sort File Records Utility                  | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00C4 | Add Transactions In File and Find Averages | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00C5 | Create Zip File Maker                      | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00C6 | PDF Generator                              | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00C7 | Bulk Renamer and Organizer                 | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00C8 | Mp3 Tagger                                 | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00C9 | Log File Maker                             | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00CA | Excel Spreadsheet Exporter                 | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00CB | RPG Character Stat Creator                 | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00CC | Image Map Generator                        | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00CD | File Copy Utility                          | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00CE | Code Snippet Manager                       | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00CF | Versioning Manager                         | :file_folder:          | :bulb:     |                         |                                                   |              |
-| 0x00E0 | SQL Query Analyzer                         | :ticket:               | :bulb:     |                         |                                                   |              |
-| 0x00E1 | Remote SQL Tool                            | :ticket:               | :bulb:     |                         |                                                   |              |
-| 0x00E2 | Baseball / Other Card Collector            | :ticket:               | :bulb:     |                         |                                                   |              |
-| 0x00E3 | Report Generator                           | :ticket:               | :bulb:     |                         |                                                   |              |
-| 0x00E4 | Database Backup Script Maker               | :ticket:               | :bulb:     |                         |                                                   |              |
-| 0x00E5 | Event Scheduler and Calendar               | :ticket:               | :bulb:     |                         |                                                   |              |
-| 0x00E6 | Budget Tracker                             | :ticket:               | :bulb:     |                         |                                                   |              |
-| 0x00E7 | Address Book                               | :ticket:               | :bulb:     |                         |                                                   |              |
-| 0x00E8 | TV Show Tracker                            | :ticket:               | :bulb:     |                         |                                                   |              |
-| 0x00E9 | Travel Planner System                      | :ticket:               | :bulb:     |                         |                                                   |              |
-| 0x00EA | ERD Creator                                | :ticket:               | :bulb:     |                         |                                                   |              |
-| 0x00EB | Database Translation                       | :ticket:               | :bulb:     |                         |                                                   |              |
-| 0x00EC | Web Board                                  | :ticket:               | :bulb:     |                         |                                                   |              |
-| 0x0100 | Slide Show                                 | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x0101 | Mind Mapper                                | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x0102 | Import Picture and Save as Grayscale       | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x0103 | Stream Video from Online                   | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x0104 | Mp3 Player                                 | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x0105 | Bulk Picture Manipulator                   | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x0106 | CD Burning App                             | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x0107 | YouTube Downloader                         | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x0108 | Wallpaper Manager                          | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x0109 | Screen Capture Program                     | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x010A | Image Browser                              | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x010B | Traffic Light Application                  | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x010C | Mp3 to Wav Converter                       | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x010D | Signature Maker                            | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x010E | Screen Saver                               | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x010F | Watermarking Application                   | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x0110 | Turtle Graphics                            | :space_invader:        | :bulb:     |                         |                                                   |              |
-| 0x0120 | Battleship                                 | :video_game:           | :bulb:     |                         |                                                   |              |
-| 0x0121 | Chess and Checkers                         | :video_game:           | :bulb:     |                         |                                                   |              |
-| 0x0122 | Hangman                                    | :video_game:           | :bulb:     |                         |                                                   |              |
-| 0x0123 | Crossword Puzzle                           | :video_game:           | :bulb:     |                         |                                                   |              |
-| 0x0124 | Frogger                                    | :video_game:           | :bulb:     |                         |                                                   |              |
-| 0x0140 | Collatz Conjecture                         | :computer:             | :bookmark: |                         |                                                   |              |
-| 0x0141 | Sorting                                    | :computer:             | :bookmark: |                         |                                                   |              |
-| 0x0142 | Closest pair problem                       | :computer:             | :bookmark: |                         |                                                   |              |
-| 0x0143 | Sieve of Eratosthenes                      | :computer:             | :bookmark: |                         |                                                   |              |
-| 0x0160 | Graph from links                           | :repeat:               | :bookmark: |                         |                                                   |              |
-| 0x0161 | Eulerian Path                              | :repeat:               | :bookmark: |                         |                                                   |              |
-| 0x0162 | Connected Graph                            | :repeat:               | :bookmark: |                         |                                                   |              |
-| 0x0163 | Dijkstra's Algorithm                       | :repeat:               | :bookmark: |                         |                                                   |              |
-| 0x0164 | Inverted index                             | :repeat:               | :bookmark: |                         |                                                   |              |
+| Number | Title                                      | Section                | From       | Done                    | File                                                 | Difficulty   |
+| :----: | :----                                      | :-----:                | :--:       | :--:                    | :--:                                                 | :---------   |
+| 0x0000 | Find PI to the Nth Digit                   | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x0001 | Fibonacci Sequence                         | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x0002 | Prime Factorization                        | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x0003 | Next Prime Number                          | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x0004 | Find Cost of Tile to Cover W x H Floor     | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x0005 | Mortgage Calculator                        | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x0006 | Change Return Program                      | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x0007 | Binary to Decimal and Back Converter       | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x0008 | Calculator                                 | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x0009 | Unit Converter                             | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x000A | Alarm Clock                                | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x000B | Distance Between Two Cities                | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x000C | Credit Card Validator                      | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x000D | Tax Calculator                             | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x000E | Factorial Finder                           | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x000F | Complex Number Algebra                     | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x0010 | Happy Numbers                              | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x0011 | Number Names                               | :1234:                 | :bookmark: |                         |                                                      |              |
+| 0x0420 | Reverse a String                           | :capital_abcd:         | :bulb:     | :ballot_box_with_check: | [:page_facing_up:](./text/reverse/src/lib.rs)        | :star:       |
+| 0x0421 | Pig Latin                                  | :capital_abcd:         | :bulb:     | :ballot_box_with_check: | [:page_facing_up:](./text/pig_latin/src/lib.rs)      | :star:       |
+| 0x0422 | Count Vowels                               | :capital_abcd:         | :bulb:     | :ballot_box_with_check: | [:page_facing_up:](./text/vowels_counter/src/lib.rs) | :star:       |
+| 0x0423 | Check if Palindrome                        | :capital_abcd:         | :bulb:     | :ballot_box_with_check: | [:page_facing_up:](./text/palindrome/src/lib.rs)     | :star:       |
+| 0x0824 | Count Words in a String                    | :capital_abcd:         | :bulb:     | :ballot_box_with_check: | [:book:](./text/wccopy/README.md)                    | :star::star: |
+| 0x0025 | Text Editor                                | :capital_abcd:         | :bulb:     |                         |                                                      |              |
+| 0x0026 | RSS Feed Creator                           | :capital_abcd:         | :bulb:     |                         |                                                      |              |
+| 0x0027 | Post it Notes Program                      | :capital_abcd:         | :bulb:     |                         |                                                      |              |
+| 0x0028 | Quote Tracker                              | :capital_abcd:         | :bulb:     |                         |                                                      |              |
+| 0x0029 | Guestbook / Journal                        | :capital_abcd:         | :bulb:     |                         |                                                      |              |
+| 0x002A | News Ticker and Game Scores                | :capital_abcd:         | :bulb:     |                         |                                                      |              |
+| 0x002B | Fortune Teller                             | :capital_abcd:         | :bulb:     |                         |                                                      |              |
+| 0x002C | Vigenere / Vernam / Ceasar Ciphers         | :capital_abcd:         | :bulb:     |                         |                                                      |              |
+| 0x002D | Random Gift Suggestions                    | :capital_abcd:         | :bulb:     |                         |                                                      |              |
+| 0x002E | Text to HTML Generator                     | :capital_abcd:         | :bulb:     |                         |                                                      |              |
+| 0x002F | CD Key Generator                           | :capital_abcd:         | :bulb:     |                         |                                                      |              |
+| 0x0030 | Regex Query Tool                           | :capital_abcd:         | :bulb:     |                         |                                                      |              |
+| 0x0231 | Forty Days of Dating Scraper               | :capital_abcd:         | :bookmark: |                         |                                                      |              |
+| 0x0040 | FTP Program                                | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x0041 | Get Atomic Time from Internet Clock        | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x0042 | Chat Application                           | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x0043 | Fetch Current Weather                      | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x0044 | P2P File Sharing App                       | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x0045 | Port Scanner                               | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x0046 | Mail Checker                               | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x0047 | Packet Sniffer                             | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x0048 | Country from IP Lookup                     | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x0049 | Whois Search Tool                          | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x004A | Zip / Postal Code Lookup                   | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x004B | Remote Login                               | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x004C | Site Checker with Time Scheduling          | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x004D | Small Web Server                           | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x004E | Web Bot                                    | :globe_with_meridians: | :bulb:     |                         |                                                      |              |
+| 0x0060 | Product Inventory Project                  | :package:              | :bulb:     |                         |                                                      |              |
+| 0x0061 | Movie Store                                | :package:              | :bulb:     |                         |                                                      |              |
+| 0x0062 | Airline / Hotel Reservation System         | :package:              | :bulb:     |                         |                                                      |              |
+| 0x0063 | Student Grade Book Application             | :package:              | :bulb:     |                         |                                                      |              |
+| 0x0064 | Bank Account Manager                       | :package:              | :bulb:     |                         |                                                      |              |
+| 0x0065 | Library Catalog                            | :package:              | :bulb:     |                         |                                                      |              |
+| 0x0266 | Patient / Doctor Scheduler                 | :package:              | :bookmark: |                         |                                                      |              |
+| 0x0267 | Recipe Creator and Manager                 | :package:              | :bookmark: |                         |                                                      |              |
+| 0x0268 | Image Gallery                              | :package:              | :bookmark: |                         |                                                      |              |
+| 0x0269 | Class to Handle Large Numbers              | :package:              | :bookmark: |                         |                                                      |              |
+| 0x026A | Chart Making Class / API                   | :package:              | :bookmark: |                         |                                                      |              |
+| 0x026B | Shape Area and Perimeter Classes           | :package:              | :bookmark: |                         |                                                      |              |
+| 0x026C | Matrix Class                               | :package:              | :bookmark: |                         |                                                      |              |
+| 0x026D | Flower Shop Ordering To Go                 | :package:              | :bookmark: |                         |                                                      |              |
+| 0x026E | Vending Machine                            | :package:              | :bookmark: |                         |                                                      |              |
+| 0x026F | Josephus Problem                           | :package:              | :bookmark: |                         |                                                      |              |
+| 0x0270 | Family Tree Creator                        | :package:              | :bookmark: |                         |                                                      |              |
+| 0x0080 | Create A Progress Bar for Downloads        | :bar_chart:            | :bulb:     |                         |                                                      |              |
+| 0x0081 | Download Manager                           | :bar_chart:            | :bulb:     |                         |                                                      |              |
+| 0x0082 | Chat Application                           | :bar_chart:            | :bulb:     |                         |                                                      |              |
+| 0x0083 | Bulk Thumbnail Creator                     | :bar_chart:            | :bulb:     |                         |                                                      |              |
+| 0x00A0 | WYSIWG Editor                              | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00A1 | Web Browser with Tabs                      | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00A2 | Page Scraper                               | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00A3 | File Downloader                            | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00A4 | Telnet Application                         | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00A5 | Online White Board                         | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00A6 | Bandwidth Monitor                          | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00A7 | Bookmark Collector and Sorter              | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00A8 | Password Safe                              | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00A9 | Media Player Widget for iGoogle            | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00AA | Text Based Game Like Utopia                | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00AB | Scheduled Auto Login and Action            | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00AC | E-Card Generator                           | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00AD | Content Management System                  | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00AE | Template Maker                             | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00AF | CAPTCHA Maker                              | :surfer:               | :bulb:     |                         |                                                      |              |
+| 0x00C0 | Quiz Maker                                 | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00C1 | Quick Launcher                             | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00C2 | File Explorer                              | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00C3 | Sort File Records Utility                  | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00C4 | Add Transactions In File and Find Averages | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00C5 | Create Zip File Maker                      | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00C6 | PDF Generator                              | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00C7 | Bulk Renamer and Organizer                 | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00C8 | Mp3 Tagger                                 | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00C9 | Log File Maker                             | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00CA | Excel Spreadsheet Exporter                 | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00CB | RPG Character Stat Creator                 | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00CC | Image Map Generator                        | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00CD | File Copy Utility                          | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00CE | Code Snippet Manager                       | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00CF | Versioning Manager                         | :file_folder:          | :bulb:     |                         |                                                      |              |
+| 0x00E0 | SQL Query Analyzer                         | :ticket:               | :bulb:     |                         |                                                      |              |
+| 0x00E1 | Remote SQL Tool                            | :ticket:               | :bulb:     |                         |                                                      |              |
+| 0x00E2 | Baseball / Other Card Collector            | :ticket:               | :bulb:     |                         |                                                      |              |
+| 0x00E3 | Report Generator                           | :ticket:               | :bulb:     |                         |                                                      |              |
+| 0x00E4 | Database Backup Script Maker               | :ticket:               | :bulb:     |                         |                                                      |              |
+| 0x00E5 | Event Scheduler and Calendar               | :ticket:               | :bulb:     |                         |                                                      |              |
+| 0x00E6 | Budget Tracker                             | :ticket:               | :bulb:     |                         |                                                      |              |
+| 0x00E7 | Address Book                               | :ticket:               | :bulb:     |                         |                                                      |              |
+| 0x00E8 | TV Show Tracker                            | :ticket:               | :bulb:     |                         |                                                      |              |
+| 0x00E9 | Travel Planner System                      | :ticket:               | :bulb:     |                         |                                                      |              |
+| 0x00EA | ERD Creator                                | :ticket:               | :bulb:     |                         |                                                      |              |
+| 0x00EB | Database Translation                       | :ticket:               | :bulb:     |                         |                                                      |              |
+| 0x00EC | Web Board                                  | :ticket:               | :bulb:     |                         |                                                      |              |
+| 0x0100 | Slide Show                                 | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x0101 | Mind Mapper                                | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x0102 | Import Picture and Save as Grayscale       | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x0103 | Stream Video from Online                   | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x0104 | Mp3 Player                                 | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x0105 | Bulk Picture Manipulator                   | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x0106 | CD Burning App                             | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x0107 | YouTube Downloader                         | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x0108 | Wallpaper Manager                          | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x0109 | Screen Capture Program                     | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x010A | Image Browser                              | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x010B | Traffic Light Application                  | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x010C | Mp3 to Wav Converter                       | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x010D | Signature Maker                            | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x010E | Screen Saver                               | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x010F | Watermarking Application                   | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x0110 | Turtle Graphics                            | :space_invader:        | :bulb:     |                         |                                                      |              |
+| 0x0120 | Battleship                                 | :video_game:           | :bulb:     |                         |                                                      |              |
+| 0x0121 | Chess and Checkers                         | :video_game:           | :bulb:     |                         |                                                      |              |
+| 0x0122 | Hangman                                    | :video_game:           | :bulb:     |                         |                                                      |              |
+| 0x0123 | Crossword Puzzle                           | :video_game:           | :bulb:     |                         |                                                      |              |
+| 0x0124 | Frogger                                    | :video_game:           | :bulb:     |                         |                                                      |              |
+| 0x0140 | Collatz Conjecture                         | :computer:             | :bookmark: |                         |                                                      |              |
+| 0x0141 | Sorting                                    | :computer:             | :bookmark: |                         |                                                      |              |
+| 0x0142 | Closest pair problem                       | :computer:             | :bookmark: |                         |                                                      |              |
+| 0x0143 | Sieve of Eratosthenes                      | :computer:             | :bookmark: |                         |                                                      |              |
+| 0x0160 | Graph from links                           | :repeat:               | :bookmark: |                         |                                                      |              |
+| 0x0161 | Eulerian Path                              | :repeat:               | :bookmark: |                         |                                                      |              |
+| 0x0162 | Connected Graph                            | :repeat:               | :bookmark: |                         |                                                      |              |
+| 0x0163 | Dijkstra's Algorithm                       | :repeat:               | :bookmark: |                         |                                                      |              |
+| 0x0164 | Inverted index                             | :repeat:               | :bookmark: |                         |                                                      |              |
 
 ## Numbers
 
