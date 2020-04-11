@@ -52,10 +52,11 @@ impl Counter {
             let f = match File::open(&self.from) {
                 Ok(f) => f,
                 Err(e) => {
-                    let mut message = format!("failed to open '{}'", self.from);
-                    if e.kind() == io::ErrorKind::NotFound {
-                        message = format!("'{}' : No such file or directory", self.from);
-                    }
+                    let message = if e.kind() == io::ErrorKind::NotFound {
+                        format!("'{}' : No such file or directory", self.from)
+                    } else {
+                        format!("failed to open '{}'", self.from)
+                    };
                     return Err(WCError::new(1, WCErrorKind::OpenFailed(e), &message));
                 }
             };
@@ -103,8 +104,9 @@ mod tests {
         let mut counter: Counter = Default::default();
         counter.set_from(path);
         let result = counter.count();
-        fs::remove_file(path).unwrap_or_else(|err| println!("Error: {}", err));
         assert!(result.is_ok());
+        fs::remove_file(path).unwrap_or_else(|err| println!("Error: {}", err));
+
         assert_eq!(2, counter.get_lines());
         assert_eq!(5, counter.get_words());
         assert_eq!(19, counter.get_chars());
